@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="t1">这里</string>
+    <string name="text">test</string>
+    <string name="phonename">输入手机号码</string>
+    <string name="baiduzhixiang">百度地址指向</string>
+    <string name="webview">Webview指向</string>
+    <string name="sourcetest">线程测试</string>
+    <string name="input_word">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="ctrl">刷新页面显示</string>
+    <string name="username">请输入用户名</string>
+    <string name="intent">隐式Intent</string>
+    <string name="webnew">隐式intent打开浏览器</string>
+    <string name="xiangying">响应打开intent</string>
+</resources>
