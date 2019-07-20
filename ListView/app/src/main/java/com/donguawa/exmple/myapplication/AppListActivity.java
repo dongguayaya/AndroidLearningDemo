@@ -109,7 +109,7 @@ public class AppListActivity extends AppCompatActivity {
                 viewHolder= (ViewHolder) convertView.getTag();
             }
             viewHolder.mAppNameTextView.setText(mAppInfos.get(position).activityInfo.loadLabel(getPackageManager()));
-            // viewHolder.mAppIconImageView.setImageDrawable((Drawable) mAppInfos.get(position).activityInfo.loadLabel(getPackageManager()));
+            viewHolder.mAppIconImageView.setImageDrawable( mAppInfos.get(position).activityInfo.loadIcon(getPackageManager()));
 
 
 
