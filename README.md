@@ -12,3 +12,5 @@ Android学习Demo库
   5.Okhttp示例，点击上面的menu出现GET POST RESPONSE三种请求方式获取数据
 
   6.简单的ListView基本学习示例
+
+  7.HandlerDemo用于学习基本的Handler的用法，用handler进行一个基本的完成进度条下载apk文件
