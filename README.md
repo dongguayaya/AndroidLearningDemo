@@ -14,3 +14,5 @@ Android学习Demo库
   6.简单的ListView基本学习示例
 
   7.HandlerDemo用于学习基本的Handler的用法，用handler进行一个基本的完成进度条下载apk文件
+
+  8.HandlerBetterDemo里面的MainActivity解决了内存泄露的问题实现倒计时，DiglettActivity是用handler实现的打地鼠的游戏。
