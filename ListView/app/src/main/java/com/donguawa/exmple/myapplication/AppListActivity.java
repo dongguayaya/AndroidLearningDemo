@@ -112,7 +112,7 @@ public class AppListActivity extends AppCompatActivity {
             viewHolder.mAppIconImageView.setImageDrawable( mAppInfos.get(position).activityInfo.loadIcon(getPackageManager()));
 
 
-
+                //一行一行的点击事件，convertView是一行的点击，也可以设置成textView点击和imageView的点击
 //            convertView.setOnClickListener(new View.OnClickListener() {
 //                @Override
 //                public void onClick(View v) {

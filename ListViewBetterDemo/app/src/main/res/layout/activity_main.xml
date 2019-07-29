@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_better"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="353dp"
+        android:text="网络操作获取listview"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Button
+        android:id="@+id/bt_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="289dp"
+        android:layout_marginBottom="353dp"
+        android:text="聊天对话框实现"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="307dp" />
+</RelativeLayout>

@@ -11,8 +11,10 @@ Android学习Demo库
 
   5.Okhttp示例，点击上面的menu出现GET POST RESPONSE三种请求方式获取数据
 
-  6.简单的ListView基本学习示例
+  6.ListView的文件夹里面实现的是获取手机上所有应用，并实现点击跳转，用ViewHolder做了基本的优化列表
 
   7.HandlerDemo用于学习基本的Handler的用法，用handler进行一个基本的完成进度条下载apk文件
 
   8.HandlerBetterDemo里面的MainActivity解决了内存泄露的问题实现倒计时，DiglettActivity是用handler实现的打地鼠的游戏。
+
+  9.ListViewBetterDemo实现了网络拉取数据列表和聊天记录框的简单Demo
