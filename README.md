@@ -18,3 +18,5 @@ Android学习Demo库
   8.HandlerBetterDemo里面的MainActivity解决了内存泄露的问题实现倒计时，DiglettActivity是用handler实现的打地鼠的游戏。
 
   9.ListViewBetterDemo实现了网络拉取数据列表和聊天记录框的简单Demo
+
+  10.CardViewDemo实现卡片式布局的应用和简要的范例。
