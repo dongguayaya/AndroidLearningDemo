@@ -20,3 +20,5 @@ Android学习Demo库
   9.ListViewBetterDemo实现了网络拉取数据列表和聊天记录框的简单Demo
 
   10.CardViewDemo实现卡片式布局的应用和简要的范例。
+
+  11.ScreenAdaption屏幕适配的小demo，只是用于测试！！！
