@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="horizontal"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--1.wrap_content 2.match_parent 3. 0dp-->
+    <!--宽度为wrap_content:首先按照内容的多少来设定空间大小，然后按照权重的比例来分配-->
+    <!--2.match_parent，控件大小=父容器大小+权重比例*剩余空间大小
+    红色=1match_parent+1/(1+2)*(1match_parent-2match_parent)=2/3match_parent
+    蓝色=1match_parent+2/(1+2)*(1match_parent-2match_parent)=1/3match_parent-->
+    <!--不会受到内容变化影响-->
+    <!--0dp,直接按照你所设定的比例去分配空间-->
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="30dp"
+    android:background="#ff0000"
+    android:layout_weight="1"
+    android:text="1"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#0000ff"
+        android:layout_weight="2"
+        android:text="2"/>
+</LinearLayout>
