@@ -22,3 +22,5 @@ Android学习Demo库
   10.CardViewDemo实现卡片式布局的应用和简要的范例。
 
   11.ScreenAdaption屏幕适配的小demo，只是用于测试！！！
+
+  12.Service的基础用法示例。
