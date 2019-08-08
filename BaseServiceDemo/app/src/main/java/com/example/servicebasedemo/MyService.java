@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
 
 public class MyService extends Service {
@@ -45,7 +46,18 @@ public class MyService extends Service {
         // TODO: Return the communication channel to the service.
         Log.e("TAG", "服务绑定了" );
         //实现IBinder
-        return new MyBinder();
+       // return new MyBinder();
+        return new IMyAidlInterface.Stub() {
+            @Override
+            public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, String aString) throws RemoteException {
+
+            }
+
+            @Override
+            public void showProgress() throws RemoteException {
+                Log.e("TAG", "当前进度是 "+i );
+            }
+        };
     }
     //对于onBind方法而言，要求返回IBinder对象
     //实际上，我们会自己定义一个内部类，继承Binder类
@@ -61,12 +73,13 @@ public class MyService extends Service {
     public boolean onUnbind(Intent intent) {
         Log.e("TAG", "服务解绑了" );
         return super.onUnbind(intent);
+
     }
 
     //摧毁
     @Override
     public void onDestroy() {
-        Log.e("TAG", "服务销毁了" );
         super.onDestroy();
+        Log.e("TAG", "服务销毁了" );
     }
 }

@@ -24,3 +24,5 @@ Android学习Demo库
   11.ScreenAdaption屏幕适配的小demo，只是用于测试！！！
 
   12.Service的基础用法示例。
+
+  13.seviceDemo和AIDLDemo的结合实现远程监控，
