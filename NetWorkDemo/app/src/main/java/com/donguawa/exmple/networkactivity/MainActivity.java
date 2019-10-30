@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -113,8 +114,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void requestDataByGet() {
         try {
-            URL url=new URL("https://api.apiopen.top/getJoke?page=1&count=2&type=video");
-            HttpsURLConnection connection=(HttpsURLConnection)url.openConnection();
+            URL url=new URL("http://lapp01.smc.gcu.edu.cn/php/api/api");
+            HttpURLConnection connection=(HttpURLConnection)url.openConnection();
             connection.setConnectTimeout(30*1000);
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Content-Type","application/json");

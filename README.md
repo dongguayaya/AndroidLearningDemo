@@ -26,3 +26,5 @@ Android学习Demo库
   12.Service的基础用法示例。
 
   13.seviceDemo和AIDLDemo的结合实现远程监控，
+
+  14.ActivityDemo展示了Activity的各个阶段生命周期的log，RecycleView的样例

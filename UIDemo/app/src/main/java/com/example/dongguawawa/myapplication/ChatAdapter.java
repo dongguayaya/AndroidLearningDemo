@@ -16,6 +16,7 @@ public class ChatAdapter extends ArrayAdapter<Chat> {
         super(context,textViewResourceId,objects);
         resourceId=textViewResourceId;
     }
+
     @Override
     public View getView(int position,View convertView,ViewGroup parent){
         Chat chat=getItem(position);

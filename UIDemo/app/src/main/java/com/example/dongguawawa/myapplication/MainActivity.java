@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private IntentFilter intentFilter;
     private NetworkChangeReceiver networkChangeReceiver;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         intentFilter =new IntentFilter();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent=new Intent(MainActivity.this,Second_Activity.class);
+                Intent intent=new Intent(MainActivity.this,Main2Activity.class);
                 startActivity(intent);
             }
         });

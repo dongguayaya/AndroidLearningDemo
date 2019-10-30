@@ -17,6 +17,6 @@ public class fifth_Activity extends AppCompatActivity {
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(fifth_Activity.this,android.R.layout.simple_list_item_1,data);
         ListView listView=findViewById(R.id.lv_list_view);
         //调用ListView的setAdapter()方法，将构建好的适配器对象传递进去，这样ListView和数据之间的关联就建立完成。
-        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);b
     }
 }

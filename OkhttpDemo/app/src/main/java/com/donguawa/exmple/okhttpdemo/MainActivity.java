@@ -14,6 +14,7 @@ import java.util.concurrent.Executors;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.FormBody;
 import okhttp3.Headers;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -62,28 +63,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void post() {
-        Request.Builder builder=new Request.Builder();
-        builder.url(POST_URL);
-        builder.post(RequestBody.create(MEDIA_TYPE_MARKKDOWN,"Hello world github/linguist#1 **cool**, and #1!"));
-        Request request=builder.build();
+        FormBody.Builder formBody=new FormBody.Builder();
+        formBody.add("xh","201710096059");
+        formBody.add("week","4");
+        formBody.add("xn","2018-2019");
+        formBody.add("xq","2");
+        formBody.add("url","/api/table/week");
+        Request request=new Request.Builder().url("http://lapp01.smc.gcu.edu.cn/php/api/api").post(formBody.build()).build();
         Call call=mClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-
+                Log.d(TAG, "onFailure: ");
             }
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                if(response.isSuccessful()){
-                    String content=response.body().string();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            mTextView.setText(content);
-                        }
-                    });
-                }
+                Log.d(TAG, "onResponse: "+response.body());
             }
         });
     }

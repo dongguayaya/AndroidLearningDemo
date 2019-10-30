@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UIApplication</string>
+    <string name="string_register">没有账号，那就注册一个吧~</string>
+    <string name="string_login">早就是用户了？那就直接登陆吧</string>
+</resources>
